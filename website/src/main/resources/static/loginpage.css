@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family: "Hiragino Kaku Gothic ProN";
-  
 }
 
 a {
@@ -16,7 +15,7 @@ a {
 
 .top-wrapper {
   padding: 180px 0 100px 0;
- 
+  background-image: url(../static/house.jpg);
   background-size: cover;
   color: white;
   text-align: center;
@@ -64,4 +63,3 @@ a {
 .btn-wrapper p {
   margin: 10px 0;
 }
-
