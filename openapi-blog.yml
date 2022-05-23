@@ -1,0 +1,200 @@
+openapi: '3.0.2'
+info:
+  title: blogs system
+  description: this is a blogs system for Lighthouse Plan
+  version: '1.0'
+servers:
+  - url: https://localhost:8080
+paths:
+  /login:
+    get:
+      tags:
+        - users
+      description: 'return to login page'
+      operationId: getLoginView
+      responses:
+        '200':
+          description: OK
+          content:
+            text/html:    
+              schema:
+                $ref: "#/components/schemas/LoginHtml"
+    post:
+      tags:
+        - users
+      description: '接受用户登陆信息'
+      operationId: login
+      requestBody:
+        required: true
+        content:
+          text/json:
+            schema:
+              type: "object"
+              properties:
+                username:
+                  type: "string"
+                password:
+                  type: "string"
+      responses:
+        '200':
+          description: OK
+          content:
+            text/html:    
+              schema:
+                $ref: "#/components/schemas/Login"
+
+  /register:
+      get:
+        tags:
+          - users
+        description: 'return to register page'
+        operationId: getLoginView
+        responses:
+          '200':
+            description: OK
+            content:
+              text/html:    
+                schema:
+                  $ref: "#/components/schemas/registerHtml"
+      post:
+        tags:
+          - users
+        description: ''
+        operationId: register
+        requestBody:
+          required: true
+          content:
+            text/json:
+              schema:
+                type: "object"
+                properties:
+                  username:
+                    type: "string"
+                  password:
+                    type: "string"
+        responses:
+          '200':
+            description: OK
+            content:
+              text/html:    
+                schema:
+                  $ref: "#/components/schemas/register"
+
+
+
+  /homepage:
+      get:
+        tags:
+          - users
+        description: 'return to register page'
+        operationId: getLoginView
+        responses:
+          '200':
+            description: OK
+            content:
+              text/html:    
+                schema:
+                  $ref: "#/components/schemas/homepageHtml"
+      post:
+        tags:
+          - users
+        description: 'retun to homepage'
+        operationId: register
+        requestBody:
+          required: true
+          content:
+            text/json:
+              schema:
+                type: "object"
+                properties:
+                  username:
+                    type: "string"
+                  password:
+                    type: "string"
+        responses:
+          '200':
+            description: OK
+            content:
+              text/html:    
+                schema:
+                  $ref: "#/components/schemas/homepage"
+  /editor:
+      get:
+        tags:
+          - users
+        description: 'return to register page'
+        operationId: getLoginView
+        responses:
+          '200':
+            description: OK
+            content:
+              text/html:    
+                schema:
+                  $ref: "#/components/schemas/editorHtml"
+      post:
+        tags:
+          - users
+        description: 'retun to homepage'
+        operationId: register
+        requestBody:
+          required: true
+          content:
+            text/json:
+              schema:
+                type: "object"
+                properties:
+                  username:
+                    type: "string"
+                  password:
+                    type: "string"
+        responses:
+          '200':
+            description: OK
+            content:
+              text/html:    
+                schema:
+                  $ref: "#/components/schemas/homepage"
+
+
+
+components:
+  schemas:
+    LoginHtml:
+      type: "string"
+    Login:
+      type: "object"
+      properties:
+        username:
+          type: "string"
+        password:
+          type: "string"
+    
+    registerHtml:
+      type: "string"
+    register:
+      type: "object"
+      properties:
+        username:
+          type: "string"
+        password:
+          type: "string"
+
+    homepageHtml:
+      type: "string"
+    homepage:
+      type: "object"
+      properties:
+        username:
+          type: "string"
+        password:
+          type: "string"
+    
+    editorHtml:
+      type: "string"
+    editor:
+      type: "object"
+      properties:
+        username:
+          type: "string"
+        password:
+          type: "string"

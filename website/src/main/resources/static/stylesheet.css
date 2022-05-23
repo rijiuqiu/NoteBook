@@ -15,7 +15,7 @@ a {
 
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background-image: url(../static/house.jpg);
+  background-image: url("house.jpg");
   background-size: cover;
   color: white;
   text-align: center;

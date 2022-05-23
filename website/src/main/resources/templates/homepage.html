@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html  xmlns:th="https://thymeleaf.org">
 
 <head>
 	<meta charset="utf-8">
 	<title>noteblog</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" href="../static/stylesheet.css">
+	<link rel="stylesheet" th:href="@{/stylesheet.css}">
 </head>
 
 <body>
@@ -18,7 +19,8 @@
 			</div>
 
 			<div class="header-right">
-				<a class="login" href="#">ログイン</a>
+				<a class="login" th:text="${username}"></a>
+				<a class="login" href="/login" >ログイン</a>
 			</div>
 
 		</div>
