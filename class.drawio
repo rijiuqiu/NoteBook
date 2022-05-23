@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" modified="2022-05-19T07:52:50.455Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Safari/605.1.15" etag="gKDKAr0U3dz2WDM5h-Pp" version="18.0.7" type="github">
+  <diagram id="VAjCkjy1hzf8u-Qn_fSX" name="Page-1">
+    <mxGraphModel dx="937" dy="605" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vXiyHlhsnAJdgpeglbU9-9" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=1.013;entryY=0.672;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.025;exitY=0.815;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="vXiyHlhsnAJdgpeglbU9-29" target="vXiyHlhsnAJdgpeglbU9-19" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="310" y="530" as="sourcePoint" />
+            <mxPoint x="480" y="530.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vXiyHlhsnAJdgpeglbU9-18" value="ユーザー" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="80" y="390" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="vXiyHlhsnAJdgpeglbU9-19" value="- userName: string&#xa;- password: string&#xa;- id : int&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="vXiyHlhsnAJdgpeglbU9-18" vertex="1">
+          <mxGeometry y="26" width="150" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="vXiyHlhsnAJdgpeglbU9-23" value="+getter()&lt;br&gt;+setter()" style="html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="80" y="480" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vXiyHlhsnAJdgpeglbU9-28" value="プログ" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="400" y="390" width="160" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="vXiyHlhsnAJdgpeglbU9-29" value="- userName: string&#xa;- title: string&#xa;- editContent: string &#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="vXiyHlhsnAJdgpeglbU9-28" vertex="1">
+          <mxGeometry y="26" width="160" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="vXiyHlhsnAJdgpeglbU9-30" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="vXiyHlhsnAJdgpeglbU9-28" vertex="1">
+          <mxGeometry y="80" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="vXiyHlhsnAJdgpeglbU9-31" value="+ get()&#xa;+ set()&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="vXiyHlhsnAJdgpeglbU9-28" vertex="1">
+          <mxGeometry y="88" width="160" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="vXiyHlhsnAJdgpeglbU9-33" value="1&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
+          <mxGeometry x="250" y="430" width="100" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vXiyHlhsnAJdgpeglbU9-36" value="0..*" style="text;strokeColor=none;fillColor=none;align=right;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="1" vertex="1">
+          <mxGeometry x="300" y="430" width="100" height="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
