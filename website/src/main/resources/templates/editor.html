@@ -2,38 +2,244 @@
 <html>
 
 <head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
- 
- <title>editor</title>
- <link rel="stylesheet" href="../static/editorpage.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>editor</title>
+	<link rel="stylesheet" th:href="@{/editorpage.css}">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
 </head>
 
 <body>
-  <div class="signupFrm">
-  	<form action="" class="form">
-  	<h1 class="title">ノートを追加</h1>
-  	
-  	<div class="inputContainer">
-  	 <input type="text" class="input" placeholder="a">
-  	 <label for="" class="label">Title</label>
-  	</div>
-  	
-  	<div class="inputContainer">
-        <input type="text" class="input" placeholder="a">
-        <label for="" class="label">Introduction</label>
-      </div>
-     <div class="inputContainer">
-        <textarea type="text" class="input" placeholder="a"></textarea>
-        <label for="" class="label">Note</label>
-      </div>
+	<nav class="ui attached segment m-padded-td-mini">
+		<div class="ui container">
+			<div class="ui menu">
+				<h2 class="ui header item">NoteBlog</h2>
+				<a href="/homepage" class="item"><i class="home icon"></i>homepage</a>
+				<a href="" class="item"><i class="tags icon"></i>tags</a>
+				<a href="" class="item"><i class="idea icon"></i>article</a>
+				<a href="" class="item"><i class="info icon"></i>athor</a>
+				<div class="right item">
+					<div class="ui icon input">
+						<input type="text" placeholder="search...">
+						<i class="search link icon"></i>
+					</div>
+				</div>
 
-      <input type="submit" class="submitBtn" value="送　信">
-    </form>
-  </div>
+			</div>
+		</div>
+	</nav>
+
+	<!--中间头部-->
+	<div class="m-padded-tb-massive">
+		<div class="ui container">
+			<div class="ui grid">
+			<!--左边-->
+				<div class="eleven wide column">
 
 
+					<div class="ui top attached segment">
+						<div class="ui middle aligned two column grid">
+							<div class="column">
+								<h3 class="ui teal header">Note</h3>
+							</div>
+							<div class="right aligned column">
+								total of <h3 class="ui teal header m-inline-block">10</h3> articles
+							</div>
+						</div>
+					</div>
+
+
+					<div class="ui attached segment">
+						<div class="ui padded vertical segment">
+							<div class="ui grid">
+								<div class="ui fourteen wide column">
+									<h3 class="ui header">Java入門</h3>
+									<p>プログラミング言語である Java を使ってこれからプログラミングを学習しようとする方を対象とした Java 入門です。 Java
+										を使った開発を行うために必要となる JDK のインストール方法や、プログラムの作成と保存、そしてコンパイルと実行まで Java
+										を使った開発手順について解説しています。
+									</p>
+									<div class="ui grid">
+										<div class="eleven wide column">
+											<div class="ui horizontal link list">
+												<div class="item">
+												</div>
+											</div>
+										</div>
+
+										<div class="right aligned five wide column">
+											<a href="#" target="_blank" class="ui teal label">Java</a>
+
+										</div>
+									</div>
+								</div>
+			
+
+							</div>
+						</div>
+						
+						<div class="ui padded vertical segment">
+							<div class="ui grid">
+								<div class="ui fourteen wide column">
+									<h3 class="ui header">Python入門</h3>
+									<p>Pythonは汎用的なプログラミング言語の利用度調査などでは、常に高い位置を占めています。
+									システム管理やツール・アプリケーション開発・科学技術計算・Webシステムなどで広く利用されてきました。
+									特に、2010年代ごろからの機械学習ブームでは、優れた科学技術計算ツールとして評価され、大きな人気を得ました。
+
+									</p>
+									<div class="ui grid">
+										<div class="eleven wide column">
+											<div class="ui horizontal link list">
+												<div class="item">
+												</div>
+											</div>
+										</div>
+
+										<div class="right aligned five wide column">
+											<a href="#" target="_blank" class="ui teal label">Python</a>
+
+										</div>
+									</div>
+								</div>
+			
+
+							</div>
+						</div>
+						
+						
+						<div class="ui padded vertical segment">
+							<div class="ui grid">
+								<div class="ui fourteen wide column">
+									<h3 class="ui header">HTML入門</h3>
+									<p>「マークアップ」とは文章の構成や、文章の役割を示すという意味の言葉です。例えば、見出しや段落・表・リンクなど、文章が構成されている要素がどのような役割を持っているかを指示しています。HTMLの記述によって、検索エンジンがWEBページの構造を把握しやすくなります。
+
+									</p>
+									<div class="ui grid">
+										<div class="eleven wide column">
+											<div class="ui horizontal link list">
+												<div class="item">
+												</div>
+											</div>
+										</div>
+
+										<div class="right aligned five wide column">
+											<a href="#" target="_blank" class="ui teal label">HTML</a>
+
+										</div>
+									</div>
+								</div>
+			
+
+							</div>
+						</div>
+						
+						
+						
+					</div>
+
+
+					<div class="ui bottom attached segment">
+						<div class="ui middle aligned two column grid">
+							<div class="column">
+								<a href="#" class="ui mini teal basic button">front page</a>
+							</div>
+							<div class="right aligned column">
+								<a href="#" class="ui mini teal basic button">next page</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<br>
+
+			<div class="m-container-small m-padded-tb-big">
+				<div class="ui container">
+					<form action="#" method="post" class="ui form">
+						<div class="field">
+							<div class="ui left labeled input">
+								<div class="ui selection compact teal basic dropdown label">
+									<input type="hidden" value="java">
+									<i class="dropdown icon"></i>
+									<div class="default text">java</div>
+									<div class="menu">
+										<div class="item" data-value="java">java</div>
+										<div class="item" data-value="python">python</div>
+										<div class="item" data-value="html">html</div>
+									</div>
+								</div>
+								<input type="text" name="title" placeholder="title">
+							</div>
+						</div>
+						<div class="field">
+							<textarea placeholder="article" name="content"></textarea>
+						</div>
+						
+						<div class="two fields">
+							<div class="field">
+								<div class="ui left labeled action input">
+									<label class="ui compact teal basic label">list</label>
+										<div class="ui fluid selection dropdown">
+											<input type="hidden">
+											<i class="dropdown icon"></i>
+												<div class="default text">list</div>
+												<div class="menu">
+													<div class="item" data-value="1">journal</div>
+													<div class="item" data-value="2">record</div>
+												</div>
+										</div>
+								</div>
+							</div>
+							
+							<div class="field">
+								<div class="ui left labeled action input">
+									<label class="ui compact teal basic label">tag</label>
+										<div class="ui fluid selection dropdown">
+											<input type="hidden">
+											<i class="dropdown icon"></i>
+												<div class="default text">tag</div>
+												<div class="menu">
+													<div class="item" data-value="1">journal</div>
+													<div class="item" data-value="2">record</div>
+												</div>
+										</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="field">
+						  <div class="ui left labeled input">
+						    <label class="ui teal basic label">first picture</label>
+						    <input type="text" name="indexPicture" placeholder="image address">
+						  </div>
+						</div>
+						
+						<div class="ui right aligned container">
+						  <button type="button" class="ui button" onclick="window.history.go(-1)">return</button>
+						  <button class="ui teal button">save</button>
+						  <button class="ui teal button">publish</button>
+						</div>
+						
+					</form>
+				</div>
+			</div> 
+		</div>
+	</div>
+	</div>
+	</div>
+
+
+
+
+
+	<footer class="ui vertical segment">
+
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 </body>
 
 </html>

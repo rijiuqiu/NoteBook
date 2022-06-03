@@ -3,9 +3,49 @@
 	padding-bottom: 0.2em !important;
 }
 
+.m-padded-td-tiny{
+	padding-top: 0.2em !important;
+	padding-bottom: 0.2em !important;
+}
+.m-padded-td {
+	padding-top:1em !important;
+	padding-bottom: 1em !important;
+	
+}
 .m-padded-td-large{
+	padding-top:2em !important;
+	padding-bottom: 2em !important;
+}
+
+
+.m-padded-td-big{
+	padding-top:3em !important;
+	padding-bottom: 3em !important;
+	
+}
+
+
+.m-padded-td-huge{
+	padding-top:4em !important;
+	padding-bottom: 4em !important;
+	
+}
+.m-padded-td-massive{
 	padding-top:5em !important;
 	padding-bottom: 5em !important;
+	
+}
+
+.m-text-thin {
+	font-weight: 300 !important;
+}
+
+.m-text-spaced {
+	letter-spacing: 1px !important;
+}
+
+.m-text-lined {
+	line-height: 1.8;
 }
 
 .m-inline-block {
